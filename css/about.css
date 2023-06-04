@@ -1,0 +1,178 @@
+.about{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items:center;
+    height: 500px;
+    width: 30%;
+    box-sizing: border-box; /* Include the border within the div */
+    border-right: 5px solid;
+    border-image: linear-gradient(to bottom, red 50%, white 50%) 1 100%;
+
+}
+
+
+.intro {
+    font-family: 'Covered By Your Grace', cursive;
+    
+}
+
+.word-waves{
+    padding-bottom: 150px;
+    padding-left: 20px;
+}
+
+
+
+.word-waves span{
+    position: absolute;
+    font-size: 4.2rem;
+
+}
+
+.word-waves span:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 0.5px #ffffff;
+    padding-top: 0;
+}
+
+.word-waves span:nth-child(2){
+    color:#ff0000 ;
+    -webkit-text-stroke: 1px #ff0000;
+    animation: animation 3s ease-in-out infinite;
+    padding-top: 0;
+}
+
+@keyframes animation {
+    0%, 100% {
+        clip-path: polygon(0% 45% ,15% 44%,32% 50% ,54% 60% , 70% 61% ,84% 59% , 100% 52% , 100% 100% , 0% 100%);
+    }
+
+    50%{
+        clip-path: polygon(0% 60% , 16% 65% ,34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100% , 0% 100%);
+    }
+}
+
+
+.aboutme{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 60%;  
+}
+
+.aboutmeinner{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    
+}
+
+.outerabout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    
+    
+}
+
+.aboutmeinner p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: x-large;
+    color: whitesmoke;
+    line-height: 1.5;
+    word-spacing: 3px;
+}
+
+.outer1about{
+    background-color: #252423;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100vh; */
+    top: 100vh;
+    margin-bottom: 25vh;
+    margin-top: 25vh;
+}
+
+
+
+/* 
+paragraph animation 
+*/
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .outerabout {
+        flex-direction: column;
+    }
+
+    .about {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-image: linear-gradient(to right, red 50%, white 50%) 1 100%;
+    }
+
+    .aboutme {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .word-waves {
+        padding-bottom: 50px;
+        padding-left: 66px;
+        padding-top: 10px;
+    }
+
+    .word-waves span {
+        font-size: 3rem;
+    }
+
+    .aboutmeinner p {
+        font-size: large;
+    }
+
+    .aboutme{
+        padding-top:20px;
+    }
+
+    .outer1about{
+        height: 60vh;
+        margin-top: 20vh;
+    }
+
+    .aboutme{
+        border-left: 5px solid;
+         border-image: linear-gradient(to bottom, red 40%, white 60%) 1 100%;
+    }
+}
+    
+
+
