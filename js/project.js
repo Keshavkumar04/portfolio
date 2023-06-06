@@ -67,4 +67,4 @@ sliderControl.addEventListener("click", function(e){
 
 });
 
-balapaCop("Image Slider", "#999");
+

@@ -13,10 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Covered+By+Your+Grace&family=Josefin+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
 
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <div class="outeranimate">
@@ -85,7 +84,7 @@
 <!-- ABOUT SECTION  -->
 
 <div class="outer1about">
-  <div class="outerabout" >
+  <div class="outerabout" data-aos="fade-up" >
       <div class="about">
           <div class="word-waves">
               <span class="intro">ABOUT ME </span>
@@ -106,7 +105,7 @@
 
 <div class="skillsouter" >
 
-  <div class="grid" data-aos="fade-left">
+  <div class="grid" data-aos="slide-up">
       <div class="grid__item">
       </div>
       <div class="grid__item">
@@ -152,7 +151,7 @@
 <!-- PROJECT SECTION  -->
 
 <div class="outerproject">
-  <div class="slider-ctr"  data-aos="fade-right">
+  <div class="slider-ctr"  data-aos="slide-up">
       <figure class="slide"><img src="pictures/tech_write.jpg" alt="Sky"/>
         <figcaption> 
           <div class="title">TECH-WRITE</div>
@@ -180,10 +179,10 @@
       </figure>
       <div class="slider-control">
         <div class="control prev disabled">
-          <div class="icon ion-chevron-left"></div>
+          <div class="icon ion-chevron-left"><img src="icons/arrowleft.png" alt=""></div>
         </div>
         <div class="control next">
-          <div class="icon ion-chevron-right"></div>
+          <div class="icon ion-chevron-right"><img src="icons/arrowright.png" alt=""></div>
         </div>
       </div>
     </div>
@@ -192,7 +191,7 @@
 
   <!-- CONTACT FORM  -->
 
-  <div class="outerbox" data-aos="fade-left">
+  <div class="outerbox" data-aos="fade-up">
     <div class="box" >
     <div class="container">
     <form class="form"  action="https://formsubmit.co/j67506219@gmail.com" method="POST" onsubmit="return validateForm()">
@@ -238,14 +237,13 @@
 <script src="js/home.js"></script>
 <script src="js/about.js"></script>
 <script src="js/skills.js"></script>
-<script src="https://codepen.io/balapa/pen/c58fffe58d661ae3d4b168a43eb3b2b8.js"></script>
 <script src="js/project.js"></script>
 <script src="js/contact.js"></script>
-<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration:2000
-  }); -->
+    duration:1500
+  });
 </script>
 
 </body>

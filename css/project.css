@@ -59,6 +59,7 @@
 .slider-control .control .icon {
   pointer-events: none;
   transition: 0.3s all ease;
+  padding-top: 5px;
 }
 .slider-control .control.disabled {
   pointer-events: none;
