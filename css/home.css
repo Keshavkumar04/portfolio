@@ -84,11 +84,11 @@
     vertical-align: baseline;
   }
   
-  /* html,
+  html,
   body {
-    background-color: #252423;
+    /* background-color: #252423; */
     color: #F6F4F2;
-  } */
+  }
   
   /* body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
