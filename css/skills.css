@@ -1,6 +1,6 @@
 .skillsouter{
     height: 100vh;
-    background-color: #252423;
+    background-color: rgb(37, 36, 35);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,252 +11,125 @@
 
 
 .grid {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to a new line */
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 800px; /* Adjust the width to accommodate the wrapping */
-    background-color: rgb(0, 0, 0);
-    border-left: 5px solid;
-    border-image: linear-gradient(to bottom, red 50%, white 50%) 1 100%;
-    box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%);
-  }
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to a new line */
+  align-items: center;
+  justify-content: center;
+  height: 430px;
+  width: 75%; /* Adjust the width to accommodate the wrapping */
+  background-color: #252423;
+  border-left: 5px solid;
+  border-image: linear-gradient(to left, red 50%, white 50%) 1 100%;
+  margin-left: 80px;
+  /* box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%); */
+}
 
 .grid__item{
-    display: inline-block;
-    margin: 10px;
-   
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #252423;
+  transition: transform 0.3s ease;
 }
 
 
-/* 
-  .grid__item:nth-child(3n+1) {
-    background-color: #ff7f50; 
-  }
-  .grid__item:nth-child(3n+2) {
-    background-color: #00bfff; 
-  }
-  
-  .grid__item:nth-child(3n+3) {
-    background-color: #ffd700; 
-  }
-   */
+.grid__item:hover {
+  transform: scale(1.1) translateZ(10px);
+  box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%);
+}
 
-  .grid__item:nth-child(1) {
-    width: 100px;
-    height: 100px;
+
+   .grid__item:nth-child(1) {
     background-image: url(../skills/c-.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    
   }
   
   .grid__item:nth-child(2) {
-    width: 100px;
-    height: 100px;
     background-image: url(../skills/python.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    
   }
   
   .grid__item:nth-child(3) {
-    width: 100px;
-    height: 100px;
     background-image: url(../skills/html.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .grid__item:nth-child(4) {
-    width: 100px;
-    height: 100px;
     background-image: url(../skills/css.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
   
   .grid__item:nth-child(5) {
-    width: 100px;
-    height: 100px;
     background-image: url(../skills/js.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .grid__item:nth-child(6) {
-    width: 100px;
-    height: 100px;
     background-image: url(../skills/react.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .grid__item:nth-child(7) {
-    width: 100px;
-    height: 100px;
     background-image: url(../skills/node-js.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .grid__item:nth-child(8) {
-    width: 100px;
-    height: 100px;
     background-image: url(../skills/mongodb.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
   
   .grid__item:nth-child(9) {
-    width: 100px;
-    height: 100px;
     background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
-  
-  .grid__item:nth-child(10) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .grid__item:nth-child(11) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .grid__item:nth-child(12) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  
-  .grid__item:nth-child(13) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .grid__item:nth-child(14) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .grid__item:nth-child(15) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .grid__item:nth-child(16) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .grid__item:nth-child(17) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .grid__item:nth-child(18) {
-    width: 100px;
-    height: 100px;
-    background-image: url(../skills/plus.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    
-  }
-
-  
-
-
-
-  .shu-animation {
-    animation-name: shu;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-@keyframes shu {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-5px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-
-
-.grid__item {
-    position: relative;
-}
-
-.grid__item::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border: 6px solid #000000; /* Initial border color - red */
-    border-radius: 10px;
-    z-index: 1;
-    animation: borderAnimation 5s linear infinite;
-}
-
-@keyframes borderAnimation {
-    0% {
-        border-color: rgb(0, 0, 0,0); /* Red color */
-    }
-    50% {
-        border-color: #ffffff; /* White color */
-    }
-    100% {
-        border-color: rgb(0, 0, 0,0); /* Red color */
-    }
-}
 
 
 /* MEDIA QUIRIES */
 
 @media (max-width: 600px) {
+
+  .skillsouter{
+    margin-top: 18vh;
+  }
+
+  .grid__item{
+    margin: 8px;
+  }
+
     .grid {
         height: fit-content;
-        width: 80%;
+        width: 40%;
     }
 }
 
 @media (max-width: 400px) {
+
+  .skillsouter{
+    margin-top: 18vh;
+  }
     .grid {
         height: fit-content;
     }
+
+    .grid__item{
+      margin: 8px;
+    }
 }
+
+
+
+.scroll-effect {
+  position: fixed;
+  top: 50%;
+  left: -150px;
+  transform: translateY(-50%);
+  background-image:linear-gradient(to bottom left, #f00 0%, #fff 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+  transition: left 0.3s ease;
+}
+
+#scroll-text {
+  white-space: nowrap;
+  font-weight:bolder ;
+    font-size: 50px;
+    font-family: 'Covered By Your Grace', cursive;
+
+  }

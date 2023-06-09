@@ -1,7 +1,17 @@
-// Get all grid items
-const gridItems = document.querySelectorAll('.grid__item');
-
-// Add the "shu-animation" class to each grid item
-gridItems.forEach((item) => {
-    item.classList.add('shu-animation');
-});
+document.addEventListener('scroll', function() {
+    var scrollEffect = document.querySelector('.scroll-effect');
+    var skillSection = document.querySelector('#skill-section');
+    var scrollPosition = window.scrollY;
+  
+    var skillSectionOffsetTop = skillSection.offsetTop;
+    var skillSectionHeight = skillSection.offsetHeight;
+    var skillSectionThreshold = skillSectionOffsetTop + (0.4 * skillSectionHeight);
+    var scrollThreshold = skillSectionOffsetTop - 230;
+  
+    if ((scrollPosition >= scrollThreshold && scrollPosition <= skillSectionOffsetTop) || (scrollPosition >= skillSectionOffsetTop && scrollPosition <= skillSectionThreshold)) {
+      scrollEffect.style.left = '10px';
+    } else {
+      scrollEffect.style.left = '-200px';
+    }
+  });
+  

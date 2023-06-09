@@ -1,8 +1,8 @@
 .about{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(37, 36, 35);
     display: flex;
     align-items:center;
-    height: 500px;
+    height: 325px;
     width: 30%;
     box-sizing: border-box; /* Include the border within the div */
     border-right: 5px solid;
@@ -54,7 +54,7 @@
 
 
 .aboutme{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(37, 36, 35);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,7 @@
 }
 
 .outer1about{
-    background-color: #252423;
+    background-color: rgb(37, 36, 35);
     height: 100vh;
     display: flex;
     justify-content: center;
