@@ -2,7 +2,7 @@
     background-color: rgb(37, 36, 35);
     display: flex;
     align-items:center;
-    height: 325px;
+    height: 260px;
     width: 30%;
     box-sizing: border-box; /* Include the border within the div */
     border-right: 5px solid;

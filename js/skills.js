@@ -5,11 +5,11 @@ document.addEventListener('scroll', function() {
   
     var skillSectionOffsetTop = skillSection.offsetTop;
     var skillSectionHeight = skillSection.offsetHeight;
-    var skillSectionThreshold = skillSectionOffsetTop + (0.4 * skillSectionHeight);
+    var skillSectionThreshold = skillSectionOffsetTop + (0.37 * skillSectionHeight);
     var scrollThreshold = skillSectionOffsetTop - 230;
   
     if ((scrollPosition >= scrollThreshold && scrollPosition <= skillSectionOffsetTop) || (scrollPosition >= skillSectionOffsetTop && scrollPosition <= skillSectionThreshold)) {
-      scrollEffect.style.left = '10px';
+      scrollEffect.style.left = '50px';
     } else {
       scrollEffect.style.left = '-200px';
     }

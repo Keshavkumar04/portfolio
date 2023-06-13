@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10vh;
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 .slider-ctr {
@@ -14,14 +14,12 @@
   height: 500px;
   position: absolute;
  box-sizing: border-box; /* Include the border within the div */
- border-right: 5px solid;
- border-image: linear-gradient(to bottom, red 50%, white 50%) 1 100%;
-
-
-  
-  overflow: hidden;
+ overflow: hidden;
+ border-radius: 10px;
+ /* border-right: 5px solid;
+ border-image: linear-gradient(to bottom, red 50%, white 50%) 1 100%; */
   /* box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.15), 0 5px 20px 3px rgba(0, 0, 0, 0.1); */
-  box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%);
+  /* box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%); */
 }
 .slider-ctr:after {
   content: "";

@@ -26,7 +26,7 @@ function startFadeInAnimation() {
         const span = document.createElement('span');
         span.innerText = word + ' ';
         span.classList.add('fade-in');
-        span.style.animationDelay = `${index * 0.5}s`;
+        span.style.animationDelay = `${index * 0.25}s`;
         paragraph.appendChild(span);
       });
 

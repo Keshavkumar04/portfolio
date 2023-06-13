@@ -1,11 +1,11 @@
 
 
 .imageholder{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 450px;
     width: 450px;
     display: inline-block;
-    background-image: url(../icons/background2.png);
+    background-image: url(../icons/backgd.png);
     background-size: contain;
 } 
 
@@ -16,7 +16,7 @@
     width: 450px;
     background-color:rgb(37, 36, 35);
     border-left: 5px solid;
-    border-image: linear-gradient(to left, red 50%, white 50%) 1 100%;
+    border-image: linear-gradient(to bottom, red 50%, white 50%) 1 100%;
   }
   
   
@@ -39,17 +39,19 @@
 
   
 .box{
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     display: flex;
-    box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%); */
 }
 
 .outerbox{
-    background-color: rgb(37, 36, 35);
+    background-color: #252423;
     display: flex;
     justify-content: center;
     height: 100vh;
     align-items: center;
+    margin-top: 17vh;
 }
 
 .form{
@@ -143,7 +145,7 @@ button:active:before {
 }
 
 .iconpic:hover img {
-    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #00c6ff) drop-shadow(0 0 15px #00c6ff);
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #ffa0a0) drop-shadow(0 0 15px #f89f9f);
 }
 
 
