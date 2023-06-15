@@ -9,6 +9,10 @@
 
 }
 
+.smalldiv{
+  display: none;
+}
+
 
 .grid {
   display: flex;
@@ -18,7 +22,7 @@
   height: 370px;
   width: 65%; /* Adjust the width to accommodate the wrapping */
   background-color: #252423;
-  border-left: 5px solid;
+  border-left: 2px solid;
   border-image: linear-gradient(to bottom, red 50%, white 50%) 1 100%;
   margin-left: 120px;
   /* box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%); */
@@ -41,6 +45,27 @@
   transform: scale(1.1) translateZ(10px);
   box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%);
 }
+
+
+.scroll-effect {
+  position: fixed;
+  top: 50%;
+  left: -150px;
+  transform: translateY(-50%);
+  background-image: linear-gradient(to bottom left, #f00 50%, #fff 50%);  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+  transition: left 0.3s ease;
+}
+
+#scroll-text {
+  white-space: nowrap;
+  font-weight:bolder ;
+    font-size: 50px;
+    font-family: 'Covered By Your Grace', cursive;
+
+  }
 
 
    .grid__item:nth-child(1) {
@@ -85,51 +110,92 @@
 @media (max-width: 600px) {
 
   .skillsouter{
-    margin-top: 18vh;
+    margin-top: 10vh;
   }
 
   .grid__item{
     margin: 8px;
   }
 
-    .grid {
-        height: fit-content;
-        width: 40%;
+  .grid {
+      width: 55%;
+      height: fit-content;
+      margin-left: -28px;
+      border: none;
+  }
+
+    .scroll-effect {
+      display: none;
     }
+
+    .smalldiv{
+      display: block;
+    }
+
+    .smalldiv h2{
+      font-size: 50px;
+      text-align: center;
+      margin: 0;
+      background-image: linear-gradient(to bottom left, #f00 50%, #fff 50%);  background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Covered By Your Grace', cursive;
+      white-space: nowrap;
+      font-weight:bolder ;
+    }
+
+
+    
 }
 
 @media (max-width: 400px) {
 
   .skillsouter{
-    margin-top: 18vh;
+    margin-top: 10vh;
   }
     .grid {
+      width: 55%;
         height: fit-content;
+        margin-left: -28px;
+        border: none;
     }
 
     .grid__item{
       margin: 8px;
     }
+
+    .scroll-effect {
+      display: none;
+    }
+
+    .smalldiv{
+      display: block;
+    }
+
+    .smalldiv h2{
+      font-size: 50px;
+      text-align: center;
+      margin: 0;
+      background-image: linear-gradient(to bottom left, #f00 50%, #fff 50%);  background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Covered By Your Grace', cursive;
+      white-space: nowrap;
+      font-weight:bolder ;
+    }
 }
 
 
+@media (max-height: 750px) {
 
-.scroll-effect {
-  position: fixed;
-  top: 50%;
-  left: -150px;
-  transform: translateY(-50%);
-  background-image: linear-gradient(to bottom left, #f00 50%, #fff 50%);  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 10px;
-  transition: left 0.3s ease;
-}
-
-#scroll-text {
-  white-space: nowrap;
-  font-weight:bolder ;
-    font-size: 50px;
-    font-family: 'Covered By Your Grace', cursive;
-
+  .smalldiv{
+    margin-top: 30vh;
   }
+
+  .grid{
+    margin-top: 100px;
+  }
+
+}
+
+

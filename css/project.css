@@ -241,3 +241,12 @@
         margin-top: 150px;
     }
   }
+
+
+  @media (max-height: 750px) {
+
+    .outerproject{
+      margin-top: 30vh;
+    }
+
+  }
