@@ -89,8 +89,10 @@ textarea{
 form h2{
     color: red;
     margin-bottom: 34px;
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: xx-large;
+    /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Carter One', cursive;
+    font-size: x-large;
+    letter-spacing: 5px;
 }
 
 

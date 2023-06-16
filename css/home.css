@@ -164,8 +164,10 @@
     text-align: center;
     z-index: 1;
     font-weight:bolder ;
-    font-size: 100px;
-    font-family: 'Covered By Your Grace', cursive;
+    font-size: 80px;
+    letter-spacing: 8px;
+    font-family: 'Carter One', cursive;
+    
   }
 
 

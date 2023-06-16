@@ -62,8 +62,9 @@
 #scroll-text {
   white-space: nowrap;
   font-weight:bolder ;
-    font-size: 50px;
-    font-family: 'Covered By Your Grace', cursive;
+    font-size: 40px;
+    /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Carter One', cursive;
 
   }
 
@@ -139,7 +140,8 @@
       background-image: linear-gradient(to bottom left, #f00 50%, #fff 50%);  background-size: cover;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: 'Covered By Your Grace', cursive;
+      /* font-family: 'Covered By Your Grace', cursive; */
+      font-family: 'Carter One', cursive;
       white-space: nowrap;
       font-weight:bolder ;
     }
@@ -189,7 +191,7 @@
 @media (max-height: 750px) {
 
   .smalldiv{
-    margin-top: 30vh;
+    margin-top: 45vh;
   }
 
   .grid{

@@ -12,7 +12,8 @@
 
 
 .intro {
-    font-family: 'Covered By Your Grace', cursive;
+    /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Carter One', cursive;
     
 }
 
@@ -25,7 +26,7 @@
 
 .word-waves span{
     position: absolute;
-    font-size: 4.2rem;
+    font-size: 3.2rem;
 
 }
 

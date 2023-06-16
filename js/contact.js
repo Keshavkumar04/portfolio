@@ -101,3 +101,44 @@ contactform.addEventListener("submit", function(e) {
     xhr.send(formData);
   }
 });
+
+
+// the effect on heading
+
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let interval = null;
+
+function runCode(targetElement) {
+  let iteration = 0;
+  clearInterval(interval);
+
+  interval = setInterval(() => {
+    targetElement.innerText = targetElement.innerText
+      .split("")
+      .map((letter, index) => {
+        if (index < iteration) {
+          return targetElement.dataset.value[index];
+        }
+        return letters[Math.floor(Math.random() * 26)];
+      })
+      .join("");
+
+    if (iteration >= targetElement.dataset.value.length) {
+      clearInterval(interval);
+    }
+
+    iteration += 1 / 3;
+  }, 50);
+}
+
+function startCode() {
+  const targetElement = document.querySelector("#getintouch");
+  runCode(targetElement);
+
+  setInterval(() => {
+    runCode(targetElement);
+  }, 4000); // Run the code automatically every 10 seconds
+}
+
+document.addEventListener("DOMContentLoaded", startCode);
