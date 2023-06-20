@@ -138,7 +138,7 @@ function startCode() {
 
   setInterval(() => {
     runCode(targetElement);
-  }, 4000); // Run the code automatically every 10 seconds
+  }, 8000); // Run the code automatically every 10 seconds
 }
 
 document.addEventListener("DOMContentLoaded", startCode);

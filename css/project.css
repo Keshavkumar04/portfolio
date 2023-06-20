@@ -1,253 +1,257 @@
+.outer1project{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 
 .outerproject{
-    background-color: #252423;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10vh;
-    margin-top: 15vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  background-color: #000000;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 15px;
+  padding: 5px;
+  width: 65%;
 }
 
-.slider-ctr {
-  width: 900px;
-  height: 500px;
-  position: absolute;
- box-sizing: border-box; /* Include the border within the div */
- overflow: hidden;
- border-radius: 10px;
- /* border-right: 5px solid;
- border-image: linear-gradient(to bottom, red 50%, white 50%) 1 100%; */
-  /* box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.15), 0 5px 20px 3px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%); */
-}
-.slider-ctr:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to bottom, transparent 70%, rgb(176 164 164 / 60%) 100%);
-  pointer-events: none;
-  z-index: 9;
+.outerproject::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
 }
 
-.slider-control {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  width: 80px;
-  overflow: hidden;
-  border-radius: 3px;
-  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.15);
-  z-index: 99;
-}
-.slider-control .control {
-  width: 50%;
-  height: 40px;
-  display: block;
-  float: left;
-  text-align: center;
-  line-height: 40px;
-  cursor: pointer;
-  transition: 0.3s all ease;
-  background: white;
-}
-.slider-control .control .icon {
-  pointer-events: none;
-  transition: 0.3s all ease;
-  padding-top: 5px;
-}
-.slider-control .control.disabled {
-  pointer-events: none;
-  background: #ddd;
-}
-.slider-control .control.disabled .icon {
-  opacity: 0.5;
+.projects{
+  width: 250px;
+  aspect-ratio: 9/13;
+  background-color:#1A1A1A;;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #242424;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+  border-radius: 5px;
 }
 
-.slide {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: 0.45s all cubic-bezier(0.65, 0.05, 0.36, 1);
-  -webkit-clip-path: inset(0 0 0 0);
-  clip-path: inset(0 0 0 0);
+.imagesection1{
+  width: 90%;
+  height: 130px;
+  margin-top: 6px;
+  background-image: url("https://images.unsplash.com/photo-1595867005771-4d3e811d0886?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80");
+  /* position: absolute; */
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background-size: 300%;
+  background-position: 0% 0%;
+  filter: sepia(100%) hue-rotate(160deg);
+  opacity: 0.6;
+  animation: pan-image 15s linear infinite;
+  border-radius: 8px;
 }
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.125);
+
+.imagesection2{
+  width: 90%;
+  height: 130px;
+  margin-top: 6px;
+  background-image: url("https://img.freepik.com/premium-photo/stock-market-trading-numbers-investment-money-stocks-grow-profit-financial-profits_55997-2342.jpg?w=900");
+  /* position: absolute; */
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background-size: 300%;
+  background-position: 0% 0%;
+  filter: sepia(100%) hue-rotate(160deg);
+  opacity: 0.6;
+  animation: pan-image 15s linear infinite;
+  border-radius: 8px;
 }
-.slide.slide-on {
-  -webkit-clip-path: inset(0 100% 0 0);
-  clip-path: inset(0 100% 0 0);
+
+.imagesection3{
+  width: 90%;
+  height: 130px;
+  margin-top: 6px;
+  background-image: url("https://images.unsplash.com/photo-1471115853179-bb1d604434e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
+  /* position: absolute; */
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background-size: 300%;
+  background-position: 0% 0%;
+  filter: sepia(100%) hue-rotate(160deg);
+  opacity: 0.6;
+  animation: pan-image 15s linear infinite;
+  border-radius: 8px;
 }
-.slide.text-on .title {
-  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1) 0.45s;
-  -webkit-clip-path: inset(0 0 0 0);
-  clip-path: inset(0 0 0 0);
+
+.imagesection4{
+  width: 90%;
+  height: 130px;
+  margin-top: 6px;
+  background-image: url("https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80");
+  /* position: absolute; */
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background-size: 300%;
+  background-position: 0% 0%;
+  filter: sepia(100%) hue-rotate(160deg);
+  opacity: 0.6;
+  animation: pan-image 15s linear infinite;
+  border-radius: 8px;
 }
-.slide.text-on .author {
-  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1) 0.6s;
-  -webkit-clip-path: inset(0 0 0 0);
-  clip-path: inset(0 0 0 0);
-}
-.slide img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.slide figcaption {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-.slide .title {
-  font-size: 30px;
-  margin-bottom: 2px;
-  color: rgb(255, 0, 0);
-  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1) 0.45s;
-  clip-path: inset(0 0 0 100%);
-  /* letter-spacing: 2px; */
-  /* font-family: 'Covered By Your Grace', cursive; */
+
+.projectheading{
+  width: 85%;
+  margin-top: 20px;
+  padding: 4px;
+  color: #9A9A9A;
+  font-family: "Outfit", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  background: linear-gradient(97.13deg, #E9E9E9 0%, #515151 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   font-family: 'Carter One', cursive;
 }
-.slide .author {
-  color: white;
-  opacity: 0.8;
-  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1) 0.45s;
-  clip-path: inset(0 0 0 100%);
-  position: relative;
-  z-index: 9;
-  line-height: 1.5;
-  letter-spacing: 3px;
+
+.projectsummary{
+  width: 85%;
+  margin-top: 16px;
+  padding: 4px;
+  color: #8A8A8A;
+  font-family: "Outfit", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.projectbutton{
+  width: 85%;
+  margin-top: 16px;
+}
 
-.projectbuttondiv{
-    margin-top: 10px;
-    /* background-color: aqua; */
+.btn{
+  background-color: #000000;
+  border: 2 solid #E5E7EB;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 
-.projectbutton {
-    display: inline-block;
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-family: inherit;
-    text-decoration: none;
-    /* font-weight: 500;
-    font-size: 10px; */
-    padding: 5px 8px;
-    margin: 0px;
-     border: 2px solid red;
-    border-radius: 6px; 
-    z-index: 1;
-    overflow: hidden;
-    transition: 0.5s;
-}
 
-.projectbutton::before {
-    content: "";
-    position: absolute;
-    background: red;
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-.projectbutton:hover {
-    color: #ffffff;
-}
-
-.projectbutton:before {
-    top: 100%;
-    left: 100%;
-    transition: 0.7s;
-}
-
-.projectbutton:hover:before {
-    top: -30px;
-    left: -50px;
-}
-
-.projectbutton:active:before {
-    background: #ff0000;
-    transition: 0s;
-
+.btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255) ;
 }
 
 
 
 
-/* Media Queries */
 
-@media only screen and (max-width: 1200px) {
-    .slider-ctr {
-      width: 700px;
-      height: 400px;
-      
-    }
-
-    .outerproject{
-        height: 60vh;
-        margin-top: 150px;
-    }
-
+@keyframes pan-image {  
+  0% {
+    background-position: 36% 42%;
+    background-size: 200%;
   }
   
-  @media only screen and (max-width: 992px) {
-    .slider-ctr {
-      width: 500px;
-      height: 300px;
-    }
-
-    .outerproject{
-        height: 60vh;
-        margin-top: 150px;
-    }
+  20% {
+    background-position: 30% 35%;
+    background-size: 200%;
   }
   
-  @media only screen and (max-width: 768px) {
-    .slider-ctr {
-      width: 400px;
-      height: 250px;
-    }
-
-    .outerproject{
-        height: 60vh;
-        margin-top: 150px;
-    }
+  20.0001% { /* -- View 2 -- */
+    background-position: 60% 85%;
+    background-size: 500%;
   }
   
-  @media only screen and (max-width: 576px) {
-    .slider-ctr {
-      width: 371px;
-      height: 455px;
-    }
-
-    .outerproject{
-        height: 60vh;
-        margin-top: 150px;
-    }
+  40% {
+    background-position: 49% 81%;
+    background-size: 500%;
   }
-
-
-  @media (max-height: 750px) {
-
-    .outerproject{
-      margin-top: 30vh;
-    }
-
+  
+  40.0001% { /* -- View 3 -- */
+    background-position: 80% 42%;
+    background-size: 300%;
   }
+  
+  60% {
+    background-position: 84% 33%;
+    background-size: 300%;
+  }
+  
+  60.0001% { /* -- View 4 -- */
+    background-position: 0% 0%;
+    background-size: 300%;
+  }
+  
+  80% {
+    background-position: 15% 4%;
+    background-size: 300%;
+  }
+  
+  80.0001% { /* -- View 5 -- */
+    background-position: 80% 10%;
+    background-size: 300%;
+  }
+  
+  100% {
+    background-position: 72% 14%;
+    background-size: 300%;
+  }
+}
+
+
+.outerabout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(97.13deg, #E9E9E9 0%, #ff0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -1;
+}

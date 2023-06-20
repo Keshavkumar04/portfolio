@@ -1,11 +1,11 @@
 .skillsouter{
     height: 100vh;
-    background-color: rgb(37, 36, 35);
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10vh;
-    margin-top: 17vh;
+    margin-top: 4vh;
 
 }
 
@@ -21,10 +21,10 @@
   justify-content: center;
   height: 370px;
   width: 65%; /* Adjust the width to accommodate the wrapping */
-  background-color: #252423;
-  border-left: 2px solid;
+  background-color: #000000;
+  /* border-left: 2px solid;
   border-image: linear-gradient(to bottom, red 50%, white 50%) 1 100%;
-  margin-left: 120px;
+  margin-left: 120px; */
   /* box-shadow: 0 10px 15px 3px rgb(236 232 232 / 15%), 0 5px 20px 3px rgb(238 231 231 / 10%); */
 }
 
@@ -35,7 +35,7 @@
   margin: 40px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #252423;
+  background-color: #000000;
   transition: transform 0.3s ease;
   border-radius: 10px;
 }
@@ -63,8 +63,8 @@
   white-space: nowrap;
   font-weight:bolder ;
     font-size: 40px;
-    /* font-family: 'Covered By Your Grace', cursive; */
-    font-family: 'Carter One', cursive;
+    font-family: 'Covered By Your Grace', cursive;
+    /* font-family: "Outfit", Sans-serif; */
 
   }
 

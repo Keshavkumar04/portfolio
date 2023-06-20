@@ -9,7 +9,7 @@
 //         const span = document.createElement('span');
 //         span.innerText = word + ' ';
 //         span.classList.add('fade-in');
-//         span.style.animationDelay = `${index * 0.5}s`;
+//         span.style.animationDelay = `${index * 0.3}s`;
 //         paragraph.appendChild(span);
 //       });
 //     }
@@ -47,5 +47,6 @@ function startFadeInAnimation() {
     paragraph.innerHTML = paragraph.innerHTML; // Reset the HTML content to restart the animation
     startFadeInAnimation(); // Restart the fade-in animation
   }
+
 
  
